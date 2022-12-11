@@ -1,5 +1,4 @@
-/* eslint-disable no-unused-vars */
-import React, { useContext, useEffect, useReducer, useState } from 'react';
+import React, { useContext, useEffect, useReducer } from 'react';
 import dynamic from 'next/dynamic';
 import Layout from '../../components/Layout';
 import { Store } from '../../utils/Store';
@@ -170,7 +169,7 @@ function Order({ params }) {
     });
   }
 
-  function onError(err) {
+  function onError() {
     alert('error');
   }
 
